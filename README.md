@@ -66,7 +66,7 @@ We focus on the following five core datasets:
 | `yelp_checkin.csv` | Timestamped business check-in logs indicating temporal activity patterns |
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/dataset_schema.png?raw=true" width="600" alt="Dataset Schema">
+  <img src="assets/images/dataset_schema.png" width="600" alt="Dataset Schema">
   <br><i>Entity relationships and schema overview of Yelp datasets</i>
 </div>
 
@@ -85,7 +85,7 @@ To understand the overall landscape of business ratings on Yelp, we first visual
 Using the `stars` field in `yelp_business.csv`, we calculate frequency and proportion of each rating level, and render a bar chart with annotated counts.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/rating_distribution.png?raw=true" width="700" alt="Business Rating Distribution">
+  <img src="assets/images/rating_distribution.png" width="700" alt="Business Rating Distribution">
   <br><i>Distribution of Yelp business ratings (1.0–5.0)</i>
 </div>
 
@@ -106,7 +106,7 @@ To identify the dominant business types on Yelp and understand the service lands
 Each business on Yelp can belong to multiple categories (e.g., "Restaurants; Bars; Nightlife"). We split the `categories` field and compute the most common tags across all businesses.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/top_categories.png?raw=true" width="700" alt="Top Business Categories">
+  <img src="assets/images/top_categories.png" width="700" alt="Top Business Categories">
   <br><i>Top 20 most common business categories on Yelp</i>
 </div>
 
@@ -127,17 +127,17 @@ This distribution shapes the nature of user reviews, with most NLP sentiment pat
 To understand where Yelp activity is geographically concentrated, we map the locations of all businesses by latitude and longitude. This helps identify major markets and supports further regional or city-level segmentation.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/global_distribution.png?raw=true" width="600" alt="Global Distribution">
+  <img src="assets/images/global_distribution.png" width="600" alt="Global Distribution">
   <br><i>Global distribution of Yelp businesses</i>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/north_america.png?raw=true" width="700" alt="North America">
+  <img src="assets/images/north_america.png" width="700" alt="North America">
   <br><i>Zoomed-in view: North America</i>
 </div>
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/europe.png?raw=true" width="700" alt="Europe">
+  <img src="assets/images/europe.png" width="700" alt="Europe">
   <br><i>Zoomed-in view: Europe</i>
 </div>
 
@@ -156,7 +156,7 @@ This geographic context helps prioritize downstream analyses (e.g., sentiment, c
 To explore intra-city business clustering and urban layout patterns, we zoom into four cities—**Las Vegas**, **Phoenix**, **Stuttgart**, and **Edinburgh**—and visualize business density using scatter plots on geographic maps.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/city_density_maps.png?raw=true" width="700" alt="City Density Maps">
+  <img src="assets/images/city_density_maps.png" width="700" alt="City Density Maps">
   <br><i>Business density patterns across Las Vegas, Phoenix, Stuttgart, and Edinburgh</i>
 </div>
 
@@ -175,7 +175,7 @@ These maps help us understand Yelp's footprint in different urban contexts and s
 To assess whether high-rated and low-rated businesses cluster spatially, we use a **temporal heatmap** to visualize business locations in Las Vegas by star rating tiers.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/animations/1.gif?raw=true" width="700" alt="Animated Rating Heatmap">
+  <img src="assets/animations/1.gif" width="700" alt="Animated Rating Heatmap">
   <br><i>Animated heatmap of business ratings by location (Las Vegas)</i>
 </div>
 
@@ -196,7 +196,7 @@ This challenges common assumptions that "bad areas = bad ratings." Instead, revi
 To evaluate community engagement and the structure of Yelp's user base, we analyze the distribution of review counts per user. This reveals whether content contribution is evenly distributed or concentrated among a few power users.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/review_volume_distribution.png?raw=true" width="700" alt="Review Volume Distribution">
+  <img src="assets/images/review_volume_distribution.png" width="700" alt="Review Volume Distribution">
   <br><i>Distribution of number of reviews per user and cumulative distribution</i>
 </div>
 
@@ -215,7 +215,7 @@ This long-tail structure reinforces the value of elite programs and reviewer inc
 To understand the traits of Yelp's most active contributors, we analyze the top reviewers by volume and explore their review behavior across time and geography.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/animations/2.gif?raw=true" width="700" alt="Top User Activity">
+  <img src="assets/animations/2.gif" width="700" alt="Top User Activity">
   <br><i>Heatmap animation of top user's review locations across time</i>
 </div>
 
@@ -238,7 +238,7 @@ Understanding the location and time span of power users enables better **targeti
 To explore whether **"useful" votes** serve as a proxy for review quality or reliability, we analyze how rating, review length, and volume change as the threshold for `useful` votes increases.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/useful_vs_rating.png?raw=true" width="700" alt="Useful vs Rating Analysis">
+  <img src="assets/images/useful_vs_rating.png" width="700" alt="Useful vs Rating Analysis">
   <br><i>Trend of max/avg rating, review length, and review count vs. useful threshold</i>
 </div>
 
@@ -262,7 +262,7 @@ To assess whether Yelp's elite users express opinions differently than regular u
 Using `TextBlob`, we compute sentiment polarity for each review written, split by elite vs. regular users (based on the `elite` field in `yelp_user.csv`). The polarity score ranges from **−1 (very negative)** to **+1 (very positive)**.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/elite_vs_regular_sentiment.png?raw=true" width="700" alt="Elite vs Regular Sentiment">
+  <img src="assets/images/elite_vs_regular_sentiment.png" width="700" alt="Elite vs Regular Sentiment">
   <br><i>Sentiment score distribution of reviews by elite vs. regular users</i>
 </div>
 
@@ -290,7 +290,7 @@ Using `TextBlob` polarity scores, we define:
 We sample ~2,000 reviews and generate separate word clouds for each polarity segment. Common non-informative words (`place`, `service`, `food`) are excluded to enhance signal.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/word_clouds.png?raw=true" width="700" alt="Word Clouds">
+  <img src="assets/images/word_clouds.png" width="700" alt="Word Clouds">
   <br><i>Word cloud analysis of positive and negative reviews</i>
 </div>
 
@@ -315,7 +315,7 @@ To explore Yelp's social layer, we construct a user friendship graph based on th
 We transform each `user_id` and their comma-separated `friends` list into edge pairs and build an undirected graph using `NetworkX`. We first construct a global sample (~6,000 users) and visualize the network layout using the `spring_layout` algorithm.
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/friendship_network.png?raw=true" width="500" alt="Friendship Network">
+  <img src="assets/images/friendship_network.png" width="500" alt="Friendship Network">
   <br><i>Sampled Yelp user friendship network (Spring layout)</i>
 </div>
 
@@ -343,7 +343,7 @@ We filter users who have reviewed Stuttgart-based businesses and construct their
 - Visualize communities via `spring_layout`, `circular_layout`, and `kamada_kawai_layout`
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/stuttgart_network.png?raw=true" width="500" alt="Stuttgart Network">
+  <img src="assets/images/stuttgart_network.png" width="500" alt="Stuttgart Network">
   <br><i>Stuttgart user network - Spring layout with Louvain communities</i>
 </div>
 
