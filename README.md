@@ -66,7 +66,7 @@ We focus on the following five core datasets:
 | `yelp_checkin.csv` | Timestamped business check-in logs indicating temporal activity patterns |
 
 <div align="center">
-  <img src="https://github.com/Gloria050/Yelp/blob/main/assets/images/dataset_schema.png?raw=true" width="600" alt="Dataset Schema">
+  <img src="./pictures/WechatIMG623.jpg" width="600" alt="Dataset Schema">
   <br><i>Entity relationships and schema overview of Yelp datasets</i>
 </div>
 
